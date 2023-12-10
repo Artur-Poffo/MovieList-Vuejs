@@ -1,0 +1,88 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #fffff5;
+  --vt-c-white-mute: #f2f2f2;
+  --vt-c-white-extra-mute: #ebebf5;
+
+  --vt-c-black: #1e1e20;
+  --vt-c-black-soft: #252529;
+  --vt-c-black-mute: #2F3237;
+  --vt-c-black-extra-mute: #32363f;
+
+  --vt-c-indigo: #32363f;
+
+  --vt-c-green: #10b981;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-black);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
+  --color-background-extra-mute: var(--vt-c-black-extra-mute);
+
+  --color-heading: var(--vt-c-green);
+  --color-text: var(--vt-c-white);
+  --color-text-soft: var(--vt-c-white-soft);
+  --color-text-mute: var(--vt-c-white-mute);
+  --color-text-extra-mute: var(--vt-c-white-extra-mute);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-heading);
+  border-radius: 5px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  text-decoration: none;
+  list-style: none;
+  border: 0;
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text-soft);
+  background: var(--color-background);
+  line-height: 1.4;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 1.6rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
