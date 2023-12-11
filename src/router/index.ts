@@ -35,8 +35,15 @@ const router = createRouter({
       name: 'movie',
       component: () => import('../views/Movie/MovieView.vue')
     },
-    { path: '/404', name: "not-found", component: () => import('@/views/404/NotFound.vue') },
-    { path: '/:catchAll(.*)', redirect: '/404' }
+    { 
+      path: '/404',
+      name: "not-found",
+      component: () => import('@/views/404/NotFound.vue')
+    },
+    { 
+      path: '/:catchAll(.*)',
+      redirect: '/404'
+    }
   ]
 })
 

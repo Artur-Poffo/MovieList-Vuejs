@@ -3,9 +3,11 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <section id="not-found" >
+    <section id="not-found">
+        <img src="../../assets/vue-alert.png" class="vue-alert" />
+
         <h1>Página não encontrada</h1>
-        <RouterLink class="return-link" to="/" >Voltar para a Home</RouterLink>
+        <RouterLink class="return-link" to="/">Voltar para a Home</RouterLink>
     </section>
 </template>
 
@@ -20,6 +22,13 @@ import { RouterLink } from 'vue-router';
     gap: 1rem;
 }
 
+.vue-alert {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
 #not-found h1 {
     font-size: 3rem;
     color: var(--color-heading);
@@ -30,5 +39,11 @@ import { RouterLink } from 'vue-router';
     color: var(--color-heading);
     text-decoration: underline;
     text-underline-offset: 0.6rem;
+}
+
+@media (max-width: 380px) {
+    .vue-alert {
+        width: 100%;
+    }
 }
 </style>

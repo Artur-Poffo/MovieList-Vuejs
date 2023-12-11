@@ -56,4 +56,14 @@ import NavLink from './NavLink.vue';
   align-items: center;
   gap: 1rem;
 }
+
+@media (max-width: 500px) {
+  .header-container {
+    justify-content: center;
+  }
+
+  .logo {
+    display: none;
+  }
+}
 </style>
