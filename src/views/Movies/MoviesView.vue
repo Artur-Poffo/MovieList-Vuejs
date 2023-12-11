@@ -9,7 +9,6 @@ import type { LocationQueryValue } from "vue-router";
 interface DataInterface {
   movies: IMovie[],
   query: LocationQueryValue | LocationQueryValue[],
-  loading: boolean
 }
 
 export default {
@@ -17,7 +16,6 @@ export default {
     return {
       movies: [],
       query: this.$route.query.q,
-      loading: false
     };
   },
 
@@ -29,27 +27,21 @@ export default {
 
   methods: {
     async queryMoviesByName(query: LocationQueryValue | LocationQueryValue[]) {
-      this.loading = true
-
       const response = await fetch(
         `${urlBase}/search/movie?api_key=${apiKey}&language=pt-BR&query=${query}`
       );
       const { results }: { results: IMovie[] } = await response.json();
 
       this.movies = results
-      this.loading = false
     },
 
     async fetchTopRatedMovies() {
-      this.loading = true
-
       const response = await fetch(
         `${urlBase}/movie/top_rated?api_key=${apiKey}&language=pt-BR`
       );
       const { results }: { results: IMovie[] } = await response.json();
 
       this.movies = results
-      this.loading = false
     },
   },
 
@@ -76,7 +68,7 @@ export default {
     <section id="list-movies">
       <SectionHeader title="Lista de filmes" />
 
-      <DefaultItemsList v-if="!loading">
+      <DefaultItemsList>
         <li v-for="movie in movies" :key="movie.id">
           <MovieCard :movie="movie" />
         </li>

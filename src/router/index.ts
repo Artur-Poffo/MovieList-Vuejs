@@ -4,17 +4,18 @@ import HomeView from '../views/Home/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  
+
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
       return {
         el: to.hash,
-        behavior: 'smooth',
+        behavior: 'smooth'
       }
     }
 
     return {
-      top: 0, behavior: 'smooth',
+      top: 0,
+      behavior: 'smooth'
     }
   },
 
@@ -27,8 +28,15 @@ const router = createRouter({
     {
       path: '/movies',
       name: 'movies',
-      component: MoviesView,
-    }
+      component: MoviesView
+    },
+    {
+      path: '/movie/:id',
+      name: 'movie',
+      component: () => import('../views/Movie/MovieView.vue')
+    },
+    { path: '/404', name: "not-found", component: () => import('@/views/404/NotFound.vue') },
+    { path: '/:catchAll(.*)', redirect: '/404' }
   ]
 })
 

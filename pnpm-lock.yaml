@@ -20,6 +20,9 @@ dependencies:
   vue-router:
     specifier: ^4.2.5
     version: 4.2.5(vue@3.3.11)
+  vue3-star-ratings:
+    specifier: ^3.0.4
+    version: 3.0.4(typescript@5.2.2)
 
 devDependencies:
   '@rushstack/eslint-patch':
@@ -29,7 +32,7 @@ devDependencies:
     specifier: ^18.2.2
     version: 18.2.2
   '@types/node':
-    specifier: ^18.19.2
+    specifier: ^18.19.3
     version: 18.19.3
   '@vitejs/plugin-vue':
     specifier: ^4.5.1
@@ -2316,6 +2319,14 @@ packages:
       semver: 7.5.4
       typescript: 5.2.2
     dev: true
+
+  /vue3-star-ratings@3.0.4(typescript@5.2.2):
+    resolution: {integrity: sha512-bz1ZKonTGSPrsSm9F1J6gH2al+F4xJ88HSQGrc5jwggIHK5qFaCRtlf1NGG3Y0s1Fvsc2yGO/9uC5dxMQeXxpA==}
+    dependencies:
+      vue: 3.3.11(typescript@5.2.2)
+    transitivePeerDependencies:
+      - typescript
+    dev: false
 
   /vue@3.3.11(typescript@5.2.2):
     resolution: {integrity: sha512-d4oBctG92CRO1cQfVBZp6WJAs0n8AK4Xf5fNjQCBeKCvMI1efGQ5E3Alt1slFJS9fZuPcFoiAiqFvQlv1X7t/w==}

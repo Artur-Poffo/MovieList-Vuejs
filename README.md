@@ -11,12 +11,11 @@ Here is the link to the initial version of this project during my Next.js learni
 - [x] Data fetching
 - [x] Further study on routing
 - [x] Learn a bit about the different Vue APIs: Options API and Composition API
-- [] Dynamic routing
+- [x] Dynamic routing
 - [x] radix-vue - Vue.js port of Radix UI
 - [x] Pinia - state management tool
 
 ## Future tasks:
 
-- [] Implement a loading spinner for a smoother user experience
-- [] Create a 404 page
-- [] Develop a movie page with dynamic routing
+- [x] Create a 404 page
+- [x] Develop a movie page with dynamic routing
