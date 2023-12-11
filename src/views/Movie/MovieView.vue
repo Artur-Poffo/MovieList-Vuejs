@@ -90,9 +90,11 @@ async function getMovieData(movieId: string | string[]) {
 }
 
 .genres-list {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
     color: var(--color-heading);
     text-transform: uppercase;
 }
