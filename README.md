@@ -1,10 +1,31 @@
-# MovieList Vue.js
+<h1 align="center">
+  <a href="#">MovieList Vue.js</a>
+</h1>
+
+<h3 align="center">
+  MovieList using [TMDB API](https://www.themoviedb.org/)
+</h3>
+
+<h4 align="center"> 
+	 Status: Finished
+</h4>
+
+<p align="center">
+ <a href="#about">About</a> •
+ <a href="#features">Features</a> •
+ <a href="#layout">Layout</a> • 
+ <a href="#how-it-works">How it works</a> • 
+ <a href="#tech-stack">Tech Stack</a> •  
+ <a href="#author">Author</a>
+</p>
 
 ## About
 
 To continue my studies in Vue.js, I chose to revisit and enhance a project that I initially developed when I started studying Next.js. This project is a website that consumes the [TMDB](https://www.themoviedb.org/) API to display currently popular movies, also providing the functionality to search for movies by name.
 
 Here is the link to the initial version of this project during my Next.js learning phase: [MovieList](https://github.com/Artur-Poffo/MovieList).
+
+---
 
 ## Concepts to study during the project
 
@@ -15,7 +36,33 @@ Here is the link to the initial version of this project during my Next.js learni
 - [x] radix-vue - Vue.js port of Radix UI
 - [x] Pinia - state management tool
 
-## Run this project
+---
+
+## Features
+
+- [x] See popular movies on moment
+- [x] Search movies by title
+- [x] See movies info
+
+---
+
+## Layout
+
+### Homepage
+<img src="https://github.com/Artur-Poffo/MovieList-Vuejs/blob/main/public/README/Home.png?raw=true" alt="Print of Homepage" />
+
+### Search component
+<img src="https://github.com/Artur-Poffo/MovieList-Vuejs/blob/main/public/README/Search.png?raw=true" alt="Print of search component" />
+
+### Filtered movies
+<img src="https://github.com/Artur-Poffo/MovieList-Vuejs/blob/main/public/README/FilteredMovies.png?raw=true" alt="Print of filtered movies page" />
+
+### Movie page
+<img src="https://github.com/Artur-Poffo/MovieList-Vuejs/blob/main/public/README/Movie.png?raw=true" alt="Movie page" />
+
+---
+
+## How it works
 
 ### Pre-requisites
 
@@ -39,6 +86,8 @@ $ pnpm dev
 
 # The server will start at port: 5173 - go to http://localhost:5173
 ```
+
+---
 
 ## Tech Stack
 
