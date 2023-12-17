@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  MovieList using [TMDB API](https://www.themoviedb.org/)
+  MovieList using Vue.js and <a href="https://developer.themoviedb.org/reference/intro/getting-started" >TMDB API</a>
 </h3>
 
 <h4 align="center"> 
@@ -21,7 +21,7 @@
 
 ## About
 
-To continue my studies in Vue.js, I chose to revisit and enhance a project that I initially developed when I started studying Next.js. This project is a website that consumes the [TMDB](https://www.themoviedb.org/) API to display currently popular movies, also providing the functionality to search for movies by name.
+To continue my studies in Vue.js, I chose to revisit and enhance a project that I initially developed when I started studying Next.js. This project is a website that consumes the [TMDB API](https://developer.themoviedb.org/reference/intro/getting-started) to display currently popular movies, also providing the functionality to search for movies by name.
 
 Here is the link to the initial version of this project during my Next.js learning phase: [MovieList](https://github.com/Artur-Poffo/MovieList).
 
